@@ -20,7 +20,29 @@
 // Console.WriteLine($"максимальное число: {max}");
 
 //Задача 3. Проверка, является ли число четным
+// Console.WriteLine("Введите число");
+// int num31=int.Parse(Console.ReadLine()!);
+// if(num31%2==0) Console.WriteLine($"Число {num31} четное");
+// else Console.WriteLine($"Число {num31} нечетное");
+
+// Задача 4. Вывод всех четных чисел от 1 до N
 Console.WriteLine("Введите число");
-int num31=int.Parse(Console.ReadLine()!);
-if(num31%2==0) Console.WriteLine($"Число {num31} четное");
-else Console.WriteLine($"Число {num31} нечетное");
+int num41=int.Parse(Console.ReadLine()!);
+int i=1;
+if (num41>0){
+    if(num41==1) Console.WriteLine($"Четных чисел в диапазоне от 1 до {num41} нет");
+    else {
+        i=2;
+        while(i<=num41){
+            Console.Write($"{i} ");
+            i+=2;
+        }
+    }
+}
+else{
+    i=0;
+    while(i>=num41){
+        Console.Write($"{i} ");
+        i-=2;
+        }
+}
